@@ -87,6 +87,13 @@ Remote Hostにアクセスしたい場合は、SSH Serverを通してくださ�
 SSH Serverにアクセスしたい場合は、中間サーバを通してください。
 中間サーバへのアクセス情報はこれです。
 
+* 以下のような方法もあるみたい
+```bash
+Host [中継したいHost(IP)]
+LocalForward [転送先のPort] [転送先のIP Address]
+```
+
+
 ### Reference
 [SSH tunnel](https://ssh.com/ssh/tunneling)
 [ProxyCommandを使って踏み台(Bastion)経由で直接ssh/scpする](https://dev.classmethod.jp/beginners/direct-ssh-by-proxycommand/)
